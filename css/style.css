@@ -42,7 +42,7 @@ li,
 #nav-toggle {
   padding: 8px 16px;
 }
-.socials a {
+.socials a:first {
   margin-left: 8px;
 }
 #nav-toggle {
