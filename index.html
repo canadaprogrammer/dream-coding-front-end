@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="/css/style.css"/>
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <div class="nav-wrapper">
+          <div class="logo"><img src="/images/logo.png" alt="Logo" /></div>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#weddings">Weddings</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#bookings">Bookings</a></li>
+          </ul>
+          <div class="socials">
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+          </div>
+          <div id="nav-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <script type="text/javascript">
+    document.getElementById('nav-toggle').addEventListener('click', () => {
+      document.querySelector('nav ul').classList.toggle('active');
+      document.querySelector('.nav-wrapper .socials').classList.toggle('active');
+    })
+  </script>
+</body>
+</html>
